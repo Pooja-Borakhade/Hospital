@@ -1,0 +1,24 @@
+<html>
+
+<h1>Owner</h1>
+        <body>
+            
+        <table border="2px">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>hospital Name</th>
+            </tr>
+
+            {% for i in O_data %}
+            <tr>
+                
+                <td>{{ i.id }}</td>
+                <td>{{ i.Name }}</td> 
+                <td>{{ i.hospi.Name }}</td>
+                
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

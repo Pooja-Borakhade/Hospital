@@ -1,0 +1,32 @@
+{% load crispy_forms_tags %}
+
+<h1>Add Data</h1>
+<form action="{% url 'get_data' %}" method = "post">
+{% csrf_token %}
+
+{{form | crispy}}
+<button submit="Submit" >Submit</button> <br> <br>
+
+</form>
+
+
+<!-- <label for="id">ID</label>  
+<input type="number" name="Hid" placeholder="Hospital_Id" value="{{ob1.id}}" readonly><br>
+
+
+<label for="Name">Name</label>
+<input type="text" name="H_Name" placeholder="Hospital_Name" value="{{ob1.Name}}"> <br>
+
+<label for="Phone_num">Phone_num</label>
+<input type="number" name="H_Phone_num" placeholder="Hospital_Phone_num" value="{{ob1.Phone_num}}" > <br>
+
+<label for="esta_year">Esta_Year</label>
+<input type="date" name="H_esta_year" placeholder="Hospital_Esta_year" value="{{ob1.esta_year}}"> <br> -->
+
+
+<!-- <a href="{% url 'get_data'%}">Show Data</a> -->
+
+
+
+
+

@@ -1,0 +1,31 @@
+<html>
+    <head>Hospital </head>
+
+    <body>
+        <table border="2px">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>Phon Number</th>
+                <th>EST Year</th>
+                <th>Edit</th>
+            </tr>
+            {% for i in data %}
+            <tr>
+
+                <td>{{ i.id }}</td>
+                <td>{{ i.Name }}</td> 
+                <td>{{ i.Phone_num }}</td>
+                <td>{{ i.esta_year }}</td>
+                <td>
+                  
+                    <a href="{% url 'edit_data' i.id %}">Edit</a>
+                </td>
+                
+            </tr>
+            {% endfor %}
+        </table>        
+
+    </body>
+</html>
+

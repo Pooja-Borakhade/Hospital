@@ -1,0 +1,12 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ object.Name }}</h1>  
+    <p>{{object.No_of_Doctor}}</p> 
+  
+    <p>{{ object.speciality}}</p>  
+    <p>{{ object.department }}</p>  
+    <p>{{ object.hospi.Name }}</p>  
+{% endblock %}
+
